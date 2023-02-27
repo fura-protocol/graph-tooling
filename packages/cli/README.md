@@ -1,3 +1,52 @@
+# Fura Graph CLI
+## Fura Graph Command Line Interface
+```
+Fura subgraph commands, send to fura graph node
+
+USAGE
+  $ graph fura [SUBGRAPH-NAME] -g <value> --access-token <value> [-h] [--command <value>] [--ipfs-hash <value>] [--version-label <value>]
+
+FLAGS
+  -g, --node=<value>       (required) Fura graph node
+  -h, --help               Show CLI help.
+  --access-token=<value>   (required) Fura graph access token.
+  --command=<value>        Fura graph command. Supported commands are: info, list, submit, revoke. You can also use commands:
+                           fura:info, fura:list, fura:submit, fura:revoke, which will be executed separately. Remeber
+                           fura:submit builds your project first, while fura --command=submit only does the submit and you need
+                           to give the ipfsHash and versionLabel as follows:
+  --ipfs-hash=<value>      Fura graph command submit ipfsHash.
+  --version-label=<value>  Fura graph command submit versionLabel.
+
+DESCRIPTION
+  Fura subgraph commands, send to fura graph node
+
+COMMANDS
+  fura:info    Get subgraph info from fura graph node
+  fura:list    List subgraphs from fura graph node
+  fura:revoke  Revoke a subgraph from fura graph node
+  fura:submit  Submit a subgraph to fura graph node.
+```
+
+### Build and Run
+```
+git clone 'https://github.com/fura-protocol/graph-tooling.git'
+cd graph-tooling/packages/cli
+
+npm i --verbose
+npm run-script build
+
+./dist/bin.js fura --help
+```
+
+### Build and Run with Docker
+```
+git clone 'https://github.com/fura-protocol/graph-tooling.git'
+cd graph-tooling
+docker build . -t fura-graph-cli
+
+docker run -it --rm graph-cli ./dist/bin.js fura --help
+```
+
 # The Graph CLI (graph-cli)
 
 [![npm (scoped)](https://img.shields.io/npm/v/@graphprotocol/graph-cli.svg?color=success)](https://www.npmjs.com/package/@graphprotocol/graph-cli)
