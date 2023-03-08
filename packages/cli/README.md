@@ -1,5 +1,20 @@
 # Fura Graph CLI
 ## Fura Graph Command Line Interface
+
+### Installation
+
+The Graph CLI can be installed with `npm` or `yarn`:
+
+```sh
+# NPM
+npm install -g @core-dev-fura/graph-cli
+
+# Yarn
+yarn global add @core-dev-fura/graph-cli
+```
+
+### Usage
+
 ```
 Fura subgraph commands, send to fura graph node
 
