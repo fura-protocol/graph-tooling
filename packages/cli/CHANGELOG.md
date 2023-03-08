@@ -1,5 +1,27 @@
 # @graphprotocol/graph-cli
 
+## 0.42.4
+
+### Patch Changes
+
+- [#1185](https://github.com/graphprotocol/graph-tooling/pull/1185)
+  [`edf14d6`](https://github.com/graphprotocol/graph-tooling/commit/edf14d6fa580e99b317a977d0b693f182e746d4e)
+  Thanks [@incrypto32](https://github.com/incrypto32)! - Fix graph init failing to add more than one
+  contract
+
+## 0.42.3
+
+### Patch Changes
+
+- [#1134](https://github.com/graphprotocol/graph-tooling/pull/1134)
+  [`a156355`](https://github.com/graphprotocol/graph-tooling/commit/a156355351f51f242bc2fa005125ffebed62eebe)
+  Thanks [@incrypto32](https://github.com/incrypto32)! - Fix Prefix error when using graph init
+
+- [#1138](https://github.com/graphprotocol/graph-tooling/pull/1138)
+  [`eb6815e`](https://github.com/graphprotocol/graph-tooling/commit/eb6815eb4af7c8c4d9a9f2b252dca8e350c81d32)
+  Thanks [@incrypto32](https://github.com/incrypto32)! - Fix default value issues with abi and
+  startBlock
+
 ## 0.42.2
 
 ### Patch Changes
